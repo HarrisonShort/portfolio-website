@@ -5,9 +5,6 @@ import './Footer.css'
 export default function Footer() {
     return (
         <div className="footer-container">
-            <p className="footer-copyright">
-                Harrison Short (c) 2021
-             </p>
             <div className="footer-links">
                 <div className="footer-links-wrapper">
                     <div className="footer-links-items">
@@ -20,6 +17,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+            <small className="footer-copyright">
+                Harrison Short (c) 2021
+             </small>
         </div>
     )
 }

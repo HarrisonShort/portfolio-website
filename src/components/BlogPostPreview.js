@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function BlogPostPreview(props) {
+export default function BlogPostPreview(props) {
     return (
         <React.Fragment>
             <li className="blog-post__item">
@@ -16,5 +16,3 @@ function BlogPostPreview(props) {
         </React.Fragment >
     )
 }
-
-export default BlogPostPreview

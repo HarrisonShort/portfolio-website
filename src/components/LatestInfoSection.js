@@ -6,6 +6,9 @@ function LatestInfoSection() {
         <div>
             <div className="current-project">
                 <h1>Latest Project</h1>
+                {/* image here */
+
+                /* short blurb about project, from the project data */}
 
             </div>
             <div className="blog-posts__container">
@@ -15,17 +18,17 @@ function LatestInfoSection() {
                         <BlogPostPreview
                             title="Test Blog Post 1"
                             date="21st March 2021"
-                            preview-text="this is preview text 1"
+                            text="this is preview text 1"
                             path="/blog" />
                         <BlogPostPreview
                             title="Test Blog Post 2"
                             date="21st March 2021"
-                            preview-text="this is preview text 2"
+                            text="this is preview text 2"
                             path="/blog" />
                         <BlogPostPreview
                             title="Test Blog Post 3"
                             date="21st March 2021"
-                            preview-text="this is preview text 3"
+                            text="this is preview text 3"
                             path="/blog" />
                     </ul>
                 </div>
