@@ -1,0 +1,13 @@
+.grid-item {
+  width: 30%;
+  flex: 1;
+}
+
+.grid-container {
+  width: 100%;
+  display: flex;
+}
+
+.grid-row {
+  display: flex;
+}
