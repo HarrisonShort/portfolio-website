@@ -3,6 +3,8 @@ import '../../App.css'
 
 export default function Portfolio() {
     return (
-        <h1 className="portfolio">PORTFOLIO</h1>
+        <React.Fragment>
+            <h1 className="portfolio">PORTFOLIO</h1>
+        </React.Fragment>
     )
 }
