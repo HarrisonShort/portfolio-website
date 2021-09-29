@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="footer-container">
             <small className="footer-copyright">
                 Harrison Short (c) 2021
-             </small>
+            </small>
         </div>
     )
 }

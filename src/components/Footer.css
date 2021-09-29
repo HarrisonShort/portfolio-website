@@ -4,11 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  left: 0;
   bottom: 0;
 }
 
 .footer-copyright {
   color: #fff;
-  margin: 16px 0 16px 0;
+  margin: 16px;
 }
