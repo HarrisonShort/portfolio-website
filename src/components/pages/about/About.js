@@ -3,6 +3,11 @@ import '../../../App.css'
 
 export default function About() {
     return (
-        <h1 className="about">ABOUT</h1>
+        <React.Fragment>
+            <h1 id="page-header">ABOUT</h1>
+            <div className="page-container">
+
+            </div>
+        </React.Fragment>
     )
 }
