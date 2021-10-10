@@ -1,13 +1,8 @@
-.grid-item {
-  width: 30%;
-  flex: 1;
-}
-
 .grid-container {
-  width: 100%;
+  max-width: 990px;
   display: flex;
-}
-
-.grid-row {
-  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 0;
 }

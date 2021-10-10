@@ -8,28 +8,15 @@ export default function Portfolio() {
         <React.Fragment>
             <h1 className="portfolio">PORTFOLIO</h1>
             <div className="grid-container">
-                <div className="grid-row">
-                    <div class="grid-item">
-                        <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" />
-                    </div>
-                </div>
-                <div className="grid-row">
-                    <div class="grid-item">
-                        <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <PortfolioThumbnail imgSrc="/images/jetsetradiologo.jpg" />
-                    </div>
-                </div>
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
             </div>
         </React.Fragment>
     )
