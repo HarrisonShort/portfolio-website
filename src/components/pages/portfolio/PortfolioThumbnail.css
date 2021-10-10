@@ -1,6 +1,11 @@
 .imageContainer {
   width: 300px;
   margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
 }
 
 .imageContainer * {
@@ -14,4 +19,5 @@
 .imageContainer p {
   text-align: center;
   font-size: 20px;
+  padding-top: 5px;
 }
