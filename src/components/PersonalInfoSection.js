@@ -4,19 +4,40 @@ import './PersonalInfoSection.css'
 export default function PersonalInfoSection() {
     return (
         <React.Fragment>
-            <div className="info-container">
-                <div className="info-container-left">
-                    <div className="info-blurb">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <section id="personal">
+                <div className="info-container">
+                    <div className="info-container-left">
+                        <div className="info-blurb">
+                            Hi there, my name is Harrison Short. I'm a software developer based in Brisbane, Australia.
+                        </div>
+                        <div className="info-subtext">
+                            <p>You can connect with me here!</p>
+                            <br></br>
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/harrison-short/" className="href" target="_blank">
+                                        <i class="fab fa-linkedin"></i>LinkedIn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/HarrisonShort" className="href" target="_blank">
+                                        <i class="fab fa-github"></i>GitHub
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/TheHarrishun" className="href" target="_blank">
+                                        <i class="fab fa-twitter"></i>Twitter
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
-                    <div className="info-subtext">
-                        CALL TO ACTION
+                    <div className="info-container-right">
+                        <img src="/images/harrison_okunoshima.jpg" alt="Harrison Okunoshima" className="info-image" />
                     </div>
                 </div>
-                <div className="info-container-right">
-                    <img src="/images/harrison_okunoshima.jpg" alt="Harrison Okunoshima" className="info-image" />
-                </div>
-            </div>
-        </React.Fragment>
+            </section>
+        </React.Fragment >
     )
 }

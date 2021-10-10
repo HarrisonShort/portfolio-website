@@ -4,7 +4,7 @@ import './LatestInfoSection.css'
 
 function LatestInfoSection() {
     return (
-        <div className="latest-info">
+        <section className="latest-info" id="latest">
             <div className="latest-project">
                 <h1>Latest Project</h1>
                 <div className="latest-project-info">
@@ -18,7 +18,7 @@ function LatestInfoSection() {
 
                 </div>
             </div>
-            <div className="blog-posts__container">
+            {/* <div className="blog-posts__container">
                 <h1>Recent Blog Posts</h1>
                 <div className="blog-posts__wrapper">
                     <ul className="blog-posts__items">
@@ -39,8 +39,8 @@ function LatestInfoSection() {
                             path="/blog" />
                     </ul>
                 </div>
-            </div>
-        </div >
+            </div> */}
+        </section >
     )
 }
 
