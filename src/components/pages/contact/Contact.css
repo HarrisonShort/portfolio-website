@@ -2,23 +2,18 @@
   display: flex;
   box-shadow: 5px 10px 10px rgb(41, 40, 40);
   background: #f2f4f3;
-  display: flex;
   align-items: center;
-  width: 500px;
   justify-content: center;
+
+  width: 600px;
   max-height: 55%;
-  margin: 50px;
-  border-radius: 5%;
+
+  margin: 25px;
+  border-radius: 30px;
+  align-content: center;
 }
 
-.form-group {
-  display: flex;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.contact-form {
+form {
   width: 80%;
 }
 
@@ -32,6 +27,10 @@ input[type="text"] {
   width: 100%;
 }
 
+label {
+  font-size: 17px;
+}
+
 textarea {
   padding: 10px;
   display: inline-block;
@@ -40,6 +39,7 @@ textarea {
   height: 150px;
   margin-top: 5px;
   resize: none;
+  border-radius: 5px;
 }
 
 .submit-button {
@@ -48,6 +48,7 @@ textarea {
   padding: 5px;
   color: white;
   background-color: #eb2214;
+  border-radius: 10px;
 }
 
 .submit-button:hover {

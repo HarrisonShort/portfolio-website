@@ -11,7 +11,7 @@ export default function Contact() {
             <h1 id="page-header">CONTACT</h1>
             <div div className="page-container">
                 <div className="form-container">
-                    <form className="contact-form" onSubmit={submitForm}>
+                    <form onSubmit={submitForm}>
                         <div className="form-element">
                             <label htmlFor="name-input">Name</label>
                             <input type="text" id="name-input"></input>
@@ -27,9 +27,7 @@ export default function Contact() {
                             <textarea id="message-input"></textarea>
                         </div>
 
-                        <div className="form-element">
-                            <button className="submit-button">Send Message!</button>
-                        </div>
+                        <button className="submit-button">Send Message!</button>
                     </form>
                 </div>
 
