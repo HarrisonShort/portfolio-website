@@ -14,10 +14,11 @@
 }
 
 .page-container {
-  /*padding-bottom: 47px; footer font-size (15px) + margin size (16px*2) */
   justify-content: center;
+  align-items: center;
   overflow-y: auto;
   height: 100%;
+  width: 100%;
   flex: 1 0 0;
 }
 

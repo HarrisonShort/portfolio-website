@@ -1,16 +1,20 @@
+/*#region Form CSS*/
+
 .form-container {
   display: flex;
   box-shadow: 5px 10px 10px rgb(41, 40, 40);
   background: #f2f4f3;
-  align-items: center;
   justify-content: center;
 
-  width: 600px;
-  max-height: 55%;
+  width: 40%;
 
-  margin: 25px;
+  margin: 20px auto 0;
+  padding: 25px;
   border-radius: 30px;
   align-content: center;
+
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 form {
@@ -53,4 +57,28 @@ textarea {
 
 .submit-button:hover {
   background-color: #cf3126;
+}
+
+/*#endregion RegionName*/
+
+.info-subtext {
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.social-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-ul a {
+  color: #eb2214;
+  font-size: 30px;
+  margin: 0 10px;
 }
