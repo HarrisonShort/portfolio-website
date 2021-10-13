@@ -15,13 +15,15 @@ class App extends Component {
             <React.Fragment>
                 <Router>
                     <Navbar />
-                    <Switch>
-                        <Route path='/' exact component={Home} />
-                        <Route path='/portfolio' exact component={Portfolio} />
-                        {/* <Route path='/blog' exact component={Blog} /> */}
-                        <Route path='/about' exact component={About} />
-                        <Route path='/contact' exact component={Contact} />
-                    </Switch>
+                    <div className="page-container">
+                        <Switch>
+                            <Route path='/' exact component={Home} />
+                            <Route path='/portfolio' exact component={Portfolio} />
+                            {/* <Route path='/blog' exact component={Blog} /> */}
+                            <Route path='/about' exact component={About} />
+                            <Route path='/contact' exact component={Contact} />
+                        </Switch>
+                    </div>
                     <Footer />
                 </Router>
             </React.Fragment>
