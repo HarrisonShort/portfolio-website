@@ -1,7 +1,8 @@
 .footer-container {
-  background-color: #242424;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   padding: 16px;
   flex: 0 0 auto;
+  border-top: 4px solid rgb(255, 0, 0);
 }
 
 .footer-copyright {
