@@ -27,9 +27,19 @@ export default function Contact() {
         setMessage(event.target.value);
     };
 
-    const handleResponseMessage = (message,) => {
-        setResponseMessage(message);
-    };
+    const setSuccessResponseMessage = (messageText) => {
+        setResponseMessage({
+            message: messageText,
+            className: 'response-message-successful'
+        })
+    }
+
+    const setErrorResponseMessage = (messageText) => {
+        setResponseMessage({
+            message: messageText,
+            className: 'response-message-error'
+        })
+    }
 
     const updateRecaptchaToken = (token) => {
         recaptchaToken = token;
@@ -41,6 +51,30 @@ export default function Contact() {
         setMessage('');
     }
 
+    const validateFields = () => {
+        if (sender.length <= 0) {
+            setErrorResponseMessage('Please let me know your name!');
+            return false;
+        }
+
+        if (email.length <= 0) {
+            setErrorResponseMessage('Please let me know your email!');
+            return false;
+        }
+
+        if (!email.includes("@")) {
+            setErrorResponseMessage("Your email doesn't look quite right...");
+            return false;
+        }
+
+        if (message.length <= 0) {
+            setErrorResponseMessage('Please add a message!');
+            return false;
+        }
+
+        return true;
+    }
+
     const postSubmission = async () => {
         const payload = {
             sender: sender,
@@ -49,20 +83,23 @@ export default function Contact() {
             "g-recaptcha-response": recaptchaToken
         };
 
-        window.grecaptcha.reset();
+        if (validateFields()) {
+            setResponseMessage(null);
+            window.grecaptcha.reset();
 
-        try {
-            const result = await axios.post(formSparkUrl, payload);
-            setResponseMessage({
-                message: "Message received! I'll be in touch shortly!",
-                className: 'response-message-successful'
-            })
-            resetFields();
-        } catch (error) {
-            setResponseMessage({
-                message: 'There was an error during sending. If issues continue, try messaging me at one of the social links below.',
-                className: 'response-message-error'
-            })
+            try {
+                const result = await axios.post(formSparkUrl, payload);
+                setResponseMessage({
+                    message: "Message received! I'll be in touch shortly!",
+                    className: 'response-message-successful'
+                })
+                resetFields();
+            } catch (error) {
+                setResponseMessage({
+                    message: 'There was an error during sending. If issues continue, try messaging me at one of the social links below.',
+                    className: 'response-message-error'
+                })
+            }
         }
     };
 
