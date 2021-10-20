@@ -1,5 +1,5 @@
 import React from 'react'
-import './PersonalInfoSection.css'
+import '../home/PersonalInfoSection.css'
 
 export default function PersonalInfoSection() {
     return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import BlogPostPreview from './BlogPostPreview';
 import './LatestInfoSection.css'
 
 function LatestInfoSection() {

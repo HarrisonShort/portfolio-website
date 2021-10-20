@@ -1,7 +1,7 @@
 import React from 'react'
-import PersonalInfoSection from '../PersonalInfoSection.js'
-import LatestInfoSection from '../LatestInfoSection.js'
-import '../../App.css'
+import PersonalInfoSection from './PersonalInfoSection'
+import LatestInfoSection from './LatestInfoSection.js'
+import '../../../App.js'
 
 export default function Home() {
     return (
