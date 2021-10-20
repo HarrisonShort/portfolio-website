@@ -5,15 +5,17 @@ import './Contact.css'
 import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
+    // TODO: Investigate obscuring keys. https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app
     const formId = 'RDu8E3Mo';
     const formSparkUrl = `https://submit-form.com/${formId}`;
+    // TODO: Change when going to prod.
     const recaptchaKey = '6Ldj198cAAAAAJqHKPvEmfMO5bH2w1sVWOAApkI-';
     let recaptchaToken = '';
 
     const [sender, setSender] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [responseMessage, setResponseMessage] = useState('', '');
+    const [responseMessage, setResponseMessage] = useState('');
 
     const handleSenderInput = (event) => {
         setSender(event.target.value);
