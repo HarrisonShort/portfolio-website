@@ -2,13 +2,15 @@ import axios from 'axios';
 import React from 'react'
 import '../../../App.css'
 import './Contact.css'
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const formId = 'RDu8E3Mo';
 const formSparkUrl = `https://submit-form.com/${formId}`;
+const recaptchaKey = '6Ldj198cAAAAAJqHKPvEmfMO5bH2w1sVWOAApkI-';
 
 async function postSubmission() {
     const payload = {
-        message: 'Test formspark submission',
+        ...this.state
     };
 
     try {
@@ -24,6 +26,10 @@ async function submitForm() {
     await postSubmission();
 };
 
+function updateRecaptchaToken() {
+
+}
+
 export default class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -33,21 +39,13 @@ export default class Contact extends React.Component {
             message: ''
         };
 
-        console.log(this.state.sender);
-        console.log(this.state.email);
-        console.log(this.state.message);
-
         this.handleChange = this.handleChange.bind(this);
     };
 
     handleChange(event) {
-
-
         this.setState({
             [event.target.name]: event.target.value
         });
-
-        console.log(this.state);
     };
 
     render() {
@@ -69,6 +67,13 @@ export default class Contact extends React.Component {
                         <div className="form-element">
                             <label htmlFor="message-input">Message</label>
                             <textarea name="message" value={this.state.message} onChange={this.handleChange} />
+                        </div>
+
+                        <div className="form-element">
+                            <ReCAPTCHA
+                                sitekey={recaptchaKey}
+                                onChange={updateRecaptchaToken}
+                            />
                         </div>
 
                         <button className="submit-button">Send Message!</button>
