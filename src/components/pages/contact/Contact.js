@@ -13,7 +13,7 @@ export default function Contact() {
     const [sender, setSender] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [responseMessage, setResponseMessage] = useState('');
+    const [responseMessage, setResponseMessage] = useState('', '');
 
     const handleSenderInput = (event) => {
         setSender(event.target.value);
@@ -27,7 +27,7 @@ export default function Contact() {
         setMessage(event.target.value);
     };
 
-    const handleResponseMessage = (message) => {
+    const handleResponseMessage = (message,) => {
         setResponseMessage(message);
     };
 
@@ -53,11 +53,16 @@ export default function Contact() {
 
         try {
             const result = await axios.post(formSparkUrl, payload);
-            console.log(result);
-            setResponseMessage('test')
+            setResponseMessage({
+                message: "Message received! I'll be in touch shortly!",
+                className: 'response-message-successful'
+            })
             resetFields();
         } catch (error) {
-            setResponseMessage('error')
+            setResponseMessage({
+                message: 'There was an error during sending. If issues continue, try messaging me at one of the social links below.',
+                className: 'response-message-error'
+            })
         }
     };
 
@@ -94,7 +99,7 @@ export default function Contact() {
                     </div>
 
                     <button className="submit-button">Send Message!</button>
-                    <div id="response-message">{responseMessage}</div>
+                    {responseMessage && (<p className={responseMessage.className}>{responseMessage.message}</p>)}
                 </form>
             </div >
             <div className="info-subtext">

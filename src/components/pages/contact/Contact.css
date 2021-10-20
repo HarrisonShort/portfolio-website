@@ -59,7 +59,18 @@ textarea {
   background-color: #cf3126;
 }
 
-#response-message {
+.form-container p {
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.response-message-successful {
+  color: green;
+}
+
+.response-message-error {
+  color: red;
 }
 
 /*#endregion RegionName*/
