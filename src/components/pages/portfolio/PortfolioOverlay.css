@@ -1,0 +1,54 @@
+.portfolio-overlay {
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.project-information {
+  background-color: rgba(56, 56, 56);
+  position: absolute;
+  width: 80%;
+  max-height: 80%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  border-radius: 30px;
+  cursor: auto;
+}
+
+.project-container {
+  display: flex;
+  width: 80%;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.close-button {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+
+  /* Remove Styling */
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.year {
+  float: right;
+}
