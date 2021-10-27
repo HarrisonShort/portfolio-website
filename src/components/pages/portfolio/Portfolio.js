@@ -27,11 +27,11 @@ export default function Portfolio() {
                     imgSrc="/images/harrison_okunoshima.jpg"
                     title="Portfolio Website"
                     onClick={() => onThumbnailClicked({
-                        title: "test",
-                        year: 2021,
-                        details: "React, Javascript, etc.",
+                        title: "Portfolio Website",
                         blurb: "This is my portfolio website.",
-                        tags: "React",
+                        progress: "In Progress!",
+                        technologies: "HTML/CSS/JS, React",
+                        links: "https://www.harrisonshort.com",
                         closeOverlay: onOverlayClosed
                     })}
                 />
@@ -48,19 +48,68 @@ export default function Portfolio() {
                         releaseDate: "October 25th 2016",
                         progress: "Complete!",
                         role: "Sound Lead, Programmer",
-                        engine: "Unity (C#)",
+                        technologies: "Unity, C#",
                         screenshots: "/images/portfolio/bees-wont-exist/Logo+Transparent.png",
-                        links: "https://gamejolt.com/games/bees-won-t-exist/194883",
                         closeOverlay: onOverlayClosed
                     })}
                 />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
-                <PortfolioThumbnail imgSrc="/images/harrison_okunoshima.jpg" title="test" />
+                <PortfolioThumbnail
+                    imgSrc="images/portfolio/plunder-pups/logo.png"
+                    title="Plunder Pups"
+                    onClick={() => onThumbnailClicked({
+                        title: "Plunder Pups",
+                        //#region Blurb
+                        blurb: "Pick your pup, grab the most chew toys and rule the backyard!\nBased on the rules of the schoolyard game Rob the Nest, Plunder Pups pits four players against each other in a frenetic race to obtain the most chew toys at the end of the game. Through a mix of sprinting, headbutting and stealing the right player's chew toys, each game proves intense and nerve wracking right to the last moment!\nPlunder Pups (ver. 1.0.0.) features the core \"Rob the Nest- esque\" gameplay mode and options to play with up to 4 human players locally, with Xbox 360 controller support.",
+                        //#endregion
+                        studio: "Red Chung",
+                        platform: "PC",
+                        releaseDate: "September 3rd 2017",
+                        progress: "Complete!",
+                        role: "Sole Developer",
+                        technologies: "Unity, C#",
+                        screenshots: "images/portfolio/plunder-pups/logo.png",
+                        links: "https://gamejolt.com/games/plunder_pups/259764",
+                        closeOverlay: onOverlayClosed
+                    })}
+                />
+                <PortfolioThumbnail
+                    imgSrc="images/portfolio/6-in-6/CSS-logo.png"
+                    title="Cyber Sale Simulator"
+                    onClick={() => onThumbnailClicked({
+                        title: "Cyber Sale Simulator",
+                        //#region Blurb
+                        blurb: "Grab a great game!\nIt's that time of year again - it's time to grab a great deal on some games you'll probably never play! You've saved up all your pennies from the last sale and you're ready to spend your cash on anything that might fly by, but make sure you grab something good, or else you're just wasting money!\nGo! Go! Consumerism!",
+                        //#endregion
+                        studio: "6-in-6 Team",
+                        platform: "PC/Mac",
+                        releaseDate: "July 30th 2018",
+                        progress: "Complete!",
+                        role: "Programmer, Sound Designer",
+                        technologies: "Unity, C#",
+                        screenshots: "images/portfolio/6-in-6/CSS-logo.png",
+                        links: "https://harrishun.itch.io/cyber-sale-simulator",
+                        closeOverlay: onOverlayClosed
+                    })}
+                />
+                <PortfolioThumbnail
+                    imgSrc="images/portfolio/6-in-6/SS-logo.png"
+                    title="Swooping Season"
+                    onClick={() => onThumbnailClicked({
+                        title: "Swooping Season",
+                        //#region Blurb
+                        blurb: "The magpies will destroy us all.\nSnakes. Spiders. Sharks. Magpies? \nAustralia, the land down under, is known for it's dangerous flora and fauna. Every year, thousands of potential tourists are repelled from this land at the very thought of a spider crawling up their leg, or a shark attack at one of our beautiful beaches. Little do they know, these animals pale in comparison to the ferociousness of our most dangerous creature: the Australian Magpie.\nEvery year, from August through November, magpies strike fear into the heart of every man, woman and child as they descend from their nests at a piercing rate. Eyes are struck and skulls are penetrated. Those who have not encountered the feathered missiles do not know true terror.\nIn Swooping Season, players must progress from one side of a magpie-infested park to the other, making sure not to be hit in process. There is no defense from these terrifying birds, besides sprinting off in another direction, hoping an exit will see you out of the park in one piece - but be careful, one magpie easily turns into two, three, four and more if unwittingly coax them out...",
+                        //#endregion
+                        studio: "6-in-6 Team",
+                        platform: "PC/Mac",
+                        releaseDate: "August 31st 2018",
+                        progress: "Complete!",
+                        role: "Programmer, Sound Designer, Animation",
+                        technologies: "Unity, C#",
+                        screenshots: "images/portfolio/6-in-6/SS-logo.png",
+                        links: "https://harrishun.itch.io/swooping-season",
+                        closeOverlay: onOverlayClosed
+                    })}
+                />
             </div>
         </React.Fragment>
     )

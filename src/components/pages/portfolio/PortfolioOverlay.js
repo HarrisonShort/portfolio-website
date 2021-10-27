@@ -6,15 +6,21 @@ export default function PortfolioOverlay(props) {
         return <p className="blurb-split">{i}</p>
     });
 
+    const childDivHandler = (event) => {
+        event.stopPropagation();
+    }
+
     return (
         <React.Fragment>
             <div className="overlay-background" onClick={props.data.closeOverlay}>
-                <div className="project-container" onClick>
-                    <div className="scroll-area-container">
-                        <div className="project-info">
+                <div className="project-container" onClick={childDivHandler}>
+                    <div className="scroll-area-container" onClick={childDivHandler}>
+                        <div className="project-info" onClick={childDivHandler}>
                             <button className="close-button" onClick={props.data.closeOverlay}>X</button>
                             <p className="title">{props.data.title}</p>
                             <div className="left-side">
+                                {/* // TODO: Introduce a "personal comments" and "blurb" toggle thing
+                                // TODO: Figure out styling??? */}
                                 {props.data.blurb ? <div className="blurb">{splitBlurb}</div> : null}
                                 {props.data.tags ? <div className="tags">{props.data.tags}</div> : null}
                             </div>
@@ -26,8 +32,9 @@ export default function PortfolioOverlay(props) {
                                 {props.data.releaseDate ? <p><b>Release Date: </b>{props.data.releaseDate}</p> : null}
                                 {props.data.progress ? <p><b>Progress: </b>{props.data.progress}</p> : null}
                                 {props.data.role ? <p><b>My Role: </b>{props.data.role}</p> : null}
-                                {props.data.engine ? <p><b>Engine: </b>{props.data.engine}</p> : null}
+                                {props.data.technologies ? <p><b>Tech: </b>{props.data.technologies}</p> : null}
                                 {props.data.links ? <p><b>Links: </b><a href={props.data.links}>Download</a></p> : null}
+                                {/* // TODO: Add additional credits */}
 
                             </div>
                         </div>
