@@ -43,9 +43,7 @@ export default function PortfolioOverlay(props) {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </React.Fragment >

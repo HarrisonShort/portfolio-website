@@ -7,10 +7,7 @@ import PortfolioThumbnail from './PortfolioThumbnail'
 export default function Portfolio() {
     const [overlay, setOverlay] = useState(null);
 
-    const overlayShowing = (overlay != null);
-
     const onThumbnailClicked = (overlayData) => {
-        console.log(overlayData);
         setOverlay(overlayData);
     }
 
@@ -21,7 +18,7 @@ export default function Portfolio() {
     return (
         <React.Fragment>
             <h1 id="page-header">PORTFOLIO</h1>
-            {overlayShowing ? <PortfolioOverlay data={overlay}></PortfolioOverlay> : null}
+            {overlay != null ? <PortfolioOverlay data={overlay}></PortfolioOverlay> : null}
             <div className="grid-container">
                 <PortfolioThumbnail
                     imgSrc="/images/harrison_okunoshima.jpg"
