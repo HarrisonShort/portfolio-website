@@ -26,16 +26,21 @@ export default function PortfolioOverlay(props) {
                             </div>
                             <div className="right-side">
                                 {/* //TODO: Change to be a slideshow/open full image in new tab */}
-                                {props.data.screenshots ? <img className="screenshots" src={props.data.screenshots} alt=""></img> : null}
-                                {props.data.studio ? <p><b>Studio: </b>{props.data.studio}</p> : null}
-                                {props.data.plaform ? <p><b>Platform: </b>{props.data.plaform}</p> : null}
-                                {props.data.releaseDate ? <p><b>Release Date: </b>{props.data.releaseDate}</p> : null}
-                                {props.data.progress ? <p><b>Progress: </b>{props.data.progress}</p> : null}
-                                {props.data.role ? <p><b>My Role: </b>{props.data.role}</p> : null}
-                                {props.data.technologies ? <p><b>Tech: </b>{props.data.technologies}</p> : null}
-                                {props.data.links ? <p><b>Links: </b><a href={props.data.links}>Download</a></p> : null}
-                                {/* // TODO: Add additional credits */}
-
+                                {props.data.screenshots ?
+                                    <div className="screenshot-container">
+                                        <img className="screenshots" src={props.data.screenshots} alt=""></img>
+                                    </div>
+                                    : null}
+                                <div className="text-info">
+                                    {props.data.studio ? <p><b>Studio: </b>{props.data.studio}</p> : null}
+                                    {props.data.plaform ? <p><b>Platform: </b>{props.data.plaform}</p> : null}
+                                    {props.data.releaseDate ? <p><b>Release Date: </b>{props.data.releaseDate}</p> : null}
+                                    {props.data.progress ? <p><b>Progress: </b>{props.data.progress}</p> : null}
+                                    {props.data.role ? <p><b>My Role: </b>{props.data.role}</p> : null}
+                                    {props.data.technologies ? <p><b>Tech: </b>{props.data.technologies}</p> : null}
+                                    {props.data.links ? <p><b>Links: </b><a href={props.data.links}>Download</a></p> : null}
+                                    {/* // TODO: Add additional credits */}
+                                </div>
                             </div>
                         </div>
 

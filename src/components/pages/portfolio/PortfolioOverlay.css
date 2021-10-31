@@ -22,7 +22,6 @@
   -ms-transform: translate(-50%, -50%);
 
   /* font */
-  font-size: 50px;
   color: white;
 
   z-index: 3;
@@ -42,6 +41,7 @@
   flex-direction: row;
   height: 100%;
   padding: 20px 0px 20px 20px;
+  cursor: auto;
 }
 
 .close-button {
@@ -60,22 +60,24 @@
 
 .title {
   width: 100%;
+
+  font-size: 50px;
 }
 
 .left-side {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
+  height: 100%;
+  padding-left: 20px;
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
   float: right;
-  width: 40%;
-
-  padding: 20px;
-  padding-left: 80px;
+  width: 30%;
+  align-items: center;
 }
 
 .right-side p {
@@ -88,6 +90,11 @@
 
 .blurb-split {
   padding-top: 20px;
+}
+
+.screenshot-container {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .screenshots {
