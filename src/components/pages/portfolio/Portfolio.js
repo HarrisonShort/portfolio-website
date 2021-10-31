@@ -54,6 +54,24 @@ export default function Portfolio() {
                     })}
                 />
                 <PortfolioThumbnail
+                    imgSrc="\images\portfolio\bees-wont-exist\soundtrack-art.png"
+                    title="Bees Won't Exist Official Soundtrack"
+                    onClick={() => onThumbnailClicked({
+                        title: "Bees Won't Exist Official Soundtrack",
+                        //#region Blurb
+                        blurb: "The Bees Won’t Exist Official Soundtrack features 10 songs composed by myself specifically for the game, as well as one track (Pesky Bee!) that was originally composed by the team’s Lead Artist David Upcher, before I took the file to modify and extend the track. The soundtrack is primarily in an orchestral style, taking main inspiration from game franchises such as The Legend of Zelda and Final Fantasy. There is one exception to this (Feeding Time) which deviates from the theme to appropriately emphasize the tone of a certain section of the game.\n---\nAs an aspiring sound designer and games music composer, the prospect of working on a fully-fledged soundtrack for my first game was both daunting and exciting. As I’ve taught myself music production, I’ve never really put together anything completely solid, like an EP or an album. Essentially, putting my hand up to put together music for various sections of the game was me running head first into this challenge, but ultimately I think the choice paid off greatly. The situation didn’t lend me any time for indecision and I was a strict timeline to produce tracks for the game as needed, meaning that I actually completed each track instead of second-guessing myself or trying to absolutely perfect each song – an issue I’ve run into on various previous occasions. In the end, I’m extremely proud of the soundtrack, and throughout testing, audio was consistently sited as one of the top aspects of the game by playtesters.",
+                        //#endregion
+                        studio: "Honeyvale Games",
+                        platform: "PC/Mac/Linux",
+                        releaseDate: "October 25th 2016",
+                        progress: "Complete!",
+                        role: "Sound Lead, Programmer",
+                        technologies: "Unity, C#",
+                        screenshots: "/images/portfolio/bees-wont-exist/soundtrack-art.png",
+                        closeOverlay: onOverlayClosed
+                    })}
+                />
+                <PortfolioThumbnail
                     imgSrc="images/portfolio/plunder-pups/logo.png"
                     title="Plunder Pups"
                     onClick={() => onThumbnailClicked({
@@ -106,6 +124,40 @@ export default function Portfolio() {
                         role: "Programmer, Sound Designer, Animation",
                         technologies: "Unity, C#",
                         screenshots: "images/portfolio/6-in-6/SS-logo.png",
+                        links: "https://harrishun.itch.io/swooping-season",
+                        closeOverlay: onOverlayClosed
+                    })}
+                />
+                <PortfolioThumbnail
+                    imgSrc="/images/portfolio/game-jams/IGMFTD.png"
+                    title="It Grabbed Me From The Depths!"
+                    onClick={() => onThumbnailClicked({
+                        title: "It Grabbed Me From The Depths!",
+                        blurb: "",
+                        studio: "QUT Game Development Club",
+                        platform: "Android",
+                        releaseDate: "July 14th 2017",
+                        progress: "Complete!",
+                        role: "Sound Designer, Programmer (Sound Implementation)",
+                        technologies: "Unity, C#, FMOD",
+                        screenshots: "/images/portfolio/game-jams/IGMFTD.png",
+                        links: "https://harrishun.itch.io/swooping-season",
+                        closeOverlay: onOverlayClosed
+                    })}
+                />
+                <PortfolioThumbnail
+                    imgSrc="/images/portfolio/game-jams/lab-escape.png"
+                    title="Lab Escape"
+                    onClick={() => onThumbnailClicked({
+                        title: "Lab Escape",
+                        blurb: "",
+                        studio: "QUT Game Development Club",
+                        platform: "Android",
+                        releaseDate: "December 14th 2017",
+                        progress: "Complete!",
+                        role: "Sound Designer, Programmer (Sound Implementation)",
+                        technologies: "Unity, C#, FMOD",
+                        screenshots: "/images/portfolio/game-jams/lab-escape.png",
                         links: "https://harrishun.itch.io/swooping-season",
                         closeOverlay: onOverlayClosed
                     })}
