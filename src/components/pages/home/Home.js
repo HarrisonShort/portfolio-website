@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <React.Fragment>
             <PersonalInfoSection />
-            <LatestInfoSection />
+            {/* <LatestInfoSection /> */}
         </React.Fragment>
     )
 }

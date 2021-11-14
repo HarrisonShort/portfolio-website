@@ -1,0 +1,48 @@
+#personal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-container {
+  box-shadow: 5px 10px 10px rgb(41, 40, 40);
+  background: #f2f4f3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1250px;
+  margin: 25px 100px;
+  border-radius: 30px;
+}
+
+.about-container-left {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 90%;
+}
+
+.about-container-right {
+  margin: 50px;
+  width: 300px;
+}
+
+.about-blurb {
+  font-size: 100%;
+}
+
+.about-subtext {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.about-image {
+  border-radius: 5%;
+  max-width: 100%;
+  height: auto;
+}
+
+.cv-text {
+  text-align: center;
+  padding-bottom: 20px;
+}

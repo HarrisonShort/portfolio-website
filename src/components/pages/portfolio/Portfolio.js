@@ -21,18 +21,6 @@ export default function Portfolio() {
             {overlay != null ? <PortfolioOverlay data={overlay}></PortfolioOverlay> : null}
             <div className="grid-container">
                 <PortfolioThumbnail
-                    imgSrc="/images/harrison_okunoshima.jpg"
-                    title="Portfolio Website"
-                    onClick={() => onThumbnailClicked({
-                        title: "Portfolio Website",
-                        blurb: "This is my portfolio website.",
-                        progress: "In Progress!",
-                        technologies: "HTML/CSS/JS, React",
-                        links: "https://www.harrisonshort.com",
-                        closeOverlay: onOverlayClosed
-                    })}
-                />
-                <PortfolioThumbnail
                     imgSrc="\images\portfolio\bees-wont-exist\Logo+Transparent.png"
                     title="Bees Won't Exist"
                     onClick={() => onThumbnailClicked({
@@ -138,7 +126,6 @@ export default function Portfolio() {
                         role: "Sound Designer, Programmer (Sound Implementation)",
                         technologies: "Unity, C#, FMOD",
                         screenshots: "/images/portfolio/game-jams/IGMFTD.png",
-                        links: "https://harrishun.itch.io/swooping-season",
                         closeOverlay: onOverlayClosed
                     })}
                 />
@@ -155,7 +142,6 @@ export default function Portfolio() {
                         role: "Sound Designer, Programmer (Sound Implementation)",
                         technologies: "Unity, C#, FMOD",
                         screenshots: "/images/portfolio/game-jams/lab-escape.png",
-                        links: "https://harrishun.itch.io/swooping-season",
                         closeOverlay: onOverlayClosed
                     })}
                 />
