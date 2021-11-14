@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 }
 
-.info-container {
+.about-container {
   box-shadow: 5px 10px 10px rgb(41, 40, 40);
   background: #f2f4f3;
   display: flex;
@@ -15,28 +15,28 @@
   border-radius: 30px;
 }
 
-.info-container-left {
+.about-container-left {
   display: flex;
   flex-direction: column;
   margin: 50px;
   width: 90%;
 }
 
-.info-container-right {
+.about-container-right {
   margin: 50px;
   width: 300px;
 }
 
-.info-blurb {
+.about-blurb {
   font-size: 100%;
 }
 
-.info-subtext {
+.about-subtext {
   margin-top: 20px;
   align-self: center;
 }
 
-.info-image {
+.about-image {
   border-radius: 5%;
   max-width: 100%;
   height: auto;

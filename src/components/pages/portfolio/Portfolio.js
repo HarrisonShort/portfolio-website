@@ -126,7 +126,6 @@ export default function Portfolio() {
                         role: "Sound Designer, Programmer (Sound Implementation)",
                         technologies: "Unity, C#, FMOD",
                         screenshots: "/images/portfolio/game-jams/IGMFTD.png",
-                        links: "https://harrishun.itch.io/swooping-season",
                         closeOverlay: onOverlayClosed
                     })}
                 />
@@ -143,7 +142,6 @@ export default function Portfolio() {
                         role: "Sound Designer, Programmer (Sound Implementation)",
                         technologies: "Unity, C#, FMOD",
                         screenshots: "/images/portfolio/game-jams/lab-escape.png",
-                        links: "https://harrishun.itch.io/swooping-season",
                         closeOverlay: onOverlayClosed
                     })}
                 />
