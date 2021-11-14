@@ -1,8 +1,0 @@
-.grid-container {
-  max-width: 990px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto 0;
-}
