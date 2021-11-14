@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "homepage": "https://HarrisonShort.github.io/portfolio-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "axios": "^0.23.0",
