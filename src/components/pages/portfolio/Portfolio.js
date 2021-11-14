@@ -5,6 +5,8 @@ import PortfolioOverlay from './PortfolioOverlay';
 import PortfolioThumbnail from './PortfolioThumbnail'
 
 export default function Portfolio() {
+    document.title = 'Harrison Short - Portfolio';
+
     const [overlay, setOverlay] = useState(null);
 
     const onThumbnailClicked = (overlayData) => {

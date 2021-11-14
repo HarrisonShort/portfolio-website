@@ -74,25 +74,3 @@ textarea {
 }
 
 /*#endregion RegionName*/
-
-.info-subtext {
-  width: 100%;
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  padding-top: 50px;
-}
-
-.social-ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-ul a {
-  color: #eb2214;
-  font-size: 30px;
-  margin: 0 10px;
-}

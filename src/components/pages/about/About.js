@@ -3,10 +3,12 @@ import '../../../App.css'
 import './About.css'
 
 export default function About() {
+    document.title = 'Harrison Short - About';
+
     return (
         <React.Fragment>
             <h1 id="page-header">ABOUT</h1>
-            <section id="personal">
+            <section id="about-section">
                 <div className="about-container">
                     <div className="about-container-left">
                         <div className="about-blurb">
