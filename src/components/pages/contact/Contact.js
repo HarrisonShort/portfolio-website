@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import '../../../App.css'
 import './Contact.css'
 import ReCAPTCHA from 'react-google-recaptcha';
+import SocialLinks from '../../SocialLinks';
 
 export default function Contact() {
     // TODO: Investigate obscuring keys. https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app
@@ -140,27 +141,9 @@ export default function Contact() {
                     <button className="submit-button">Send Message!</button>
                     {responseMessage && (<p className={responseMessage.className}>{responseMessage.message}</p>)}
                 </form>
-            </div >
-            <div className="info-subtext">
-                <p>You can also message me here!</p>
-                <ul className="social-ul">
-                    <li>
-                        <a href="https://www.linkedin.com/in/harrison-short/" className="href" target="_blank">
-                            <i className="fab fa-linkedin"></i>LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/HarrisonShort" className="href" target="_blank">
-                            <i className="fab fa-github"></i>GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/TheHarrishun" className="href" target="_blank">
-                            <i className="fab fa-twitter"></i>Twitter
-                        </a>
-                    </li>
-                </ul>
             </div>
+            <SocialLinks
+                message="You can also message me here!" />
         </React.Fragment >
     )
 }

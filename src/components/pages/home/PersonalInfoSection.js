@@ -1,5 +1,6 @@
 import React from 'react'
-import '../home/PersonalInfoSection.css'
+import SocialLinks from '../../SocialLinks'
+import './PersonalInfoSection.css'
 
 export default function PersonalInfoSection() {
     return (
@@ -8,30 +9,16 @@ export default function PersonalInfoSection() {
                 <div className="info-container">
                     <div className="info-container-left">
                         <div className="info-blurb">
-                            Hi there, my name is Harrison Short. I'm a software developer based in Brisbane, Australia.
-                        </div>
-                        <div className="info-subtext">
-                            <p>You can connect with me here!</p>
+                            Hi there, I'm Harrison Short, a software developer based in Brisbane, Australia.
                             <br></br>
-                            <ul>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/harrison-short/" className="href" target="_blank">
-                                        <i class="fab fa-linkedin"></i>LinkedIn
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/HarrisonShort" className="href" target="_blank">
-                                        <i class="fab fa-github"></i>GitHub
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/TheHarrishun" className="href" target="_blank">
-                                        <i class="fab fa-twitter"></i>Twitter
-                                    </a>
-                                </li>
-                            </ul>
-
+                            <br></br>
+                            I have over three years of professional Unity development experience, with a key interest in the Augmented Reality and location-based software realm.
+                            <br></br>
+                            <br></br>
+                            Currently I'm working at Ardacious, makers of Ardent Roleplay, the world's first Augmented Reality app for Tabletop Roleplaying games.
                         </div>
+                        <SocialLinks
+                            message="You can connect with me here!" />
                     </div>
                     <div className="info-container-right">
                         <img src="/images/harrison_okunoshima.jpg" alt="Harrison Okunoshima" className="info-image" />

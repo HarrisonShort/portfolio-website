@@ -1,6 +1,8 @@
 #personal {
   display: flex;
   justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 
 .info-container {
@@ -10,6 +12,7 @@
   flex-direction: row;
   align-items: center;
   width: 1250px;
+  height: 70%;
   margin: 25px 100px;
   border-radius: 5% / 10%;
 }
@@ -26,7 +29,8 @@
 }
 
 .info-blurb {
-  font-size: 100%;
+  font-size: 23px;
+  text-align: center;
 }
 
 .info-subtext {
