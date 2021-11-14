@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "homepage": "https://www.harrisonshort.com",
+  "homepage": "https://harrisonshort.com",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
