@@ -6,6 +6,8 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import SocialLinks from '../../SocialLinks';
 
 export default function Contact() {
+    document.title = 'Harrison Short - Contact';
+
     // TODO: Investigate obscuring keys. https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app
     const formId = 'RDu8E3Mo';
     const formSparkUrl = `https://submit-form.com/${formId}`;
