@@ -18,7 +18,9 @@ Please note that while I am more experienced with C# (alongside the Unity game e
 
 ## Future Improvements
 
-* General project structure improvements
+* General code convention improvements
 * Blog page
 * Portfolio filtering
 * Data pulled from database
+* Responsive design
+* General UI design improvements
