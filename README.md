@@ -11,7 +11,7 @@ Please note that while I am more experienced with C# (alongside the Unity game e
 ## Used Technologies
 
 * HTML/CSS/Javascript
-* React Native
+* React
 * Node.js
 * Github
 * Formspark
