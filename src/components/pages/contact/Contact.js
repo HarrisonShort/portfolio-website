@@ -10,12 +10,12 @@ export default function Contact() {
 
     // TODO: Investigate obscuring keys. https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app
     // DEV
-    //const formId = 'RDu8E3Mo';
-    //const recaptchaKey = '6Ldj198cAAAAAJqHKPvEmfMO5bH2w1sVWOAApkI-';
+    const formId = 'RDu8E3Mo';
+    const recaptchaKey = '6Ldj198cAAAAAJqHKPvEmfMO5bH2w1sVWOAApkI-';
 
     // PROD
-    const formId = 'H0rbucax';
-    const recaptchaKey = '6LeIJl0dAAAAAGPMkJEBd1CrOJjnllQ9A75iCb-h';
+    //const formId = 'H0rbucax';
+    //const recaptchaKey = '6LeIJl0dAAAAAGPMkJEBd1CrOJjnllQ9A75iCb-h';
 
     const formSparkUrl = `https://submit-form.com/${formId}`;
 
@@ -110,8 +110,6 @@ export default function Contact() {
                     message: 'There was an error during sending. If issues continue, try messaging me at one of the social links below.',
                     className: 'response-message-error'
                 });
-                console.log(formSparkUrl);
-                console.log(error);
             }
         }
     };
