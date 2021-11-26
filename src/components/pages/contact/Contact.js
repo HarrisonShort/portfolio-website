@@ -9,8 +9,6 @@ export default function Contact() {
     document.title = 'Harrison Short - Contact';
 
     // TODO: Investigate obscuring keys. https://www.pluralsight.com/guides/hiding-secret-keys-in-create-react-app
-    const formSparkUrl = `https://submit-form.com/${formId}`;
-
     // DEV
     //const formId = 'RDu8E3Mo';
     //const recaptchaKey = '6Ldj198cAAAAAJqHKPvEmfMO5bH2w1sVWOAApkI-';
@@ -18,6 +16,8 @@ export default function Contact() {
     // PROD
     const formId = 'H0rbucax';
     const recaptchaKey = '6LeIJl0dAAAAAGPMkJEBd1CrOJjnllQ9A75iCb-h';
+
+    const formSparkUrl = `https://submit-form.com/${formId}`;
 
     let recaptchaToken = '';
 
