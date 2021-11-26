@@ -109,7 +109,9 @@ export default function Contact() {
                 setResponseMessage({
                     message: 'There was an error during sending. If issues continue, try messaging me at one of the social links below.',
                     className: 'response-message-error'
-                })
+                });
+                console.log(formSparkUrl);
+                console.log(error);
             }
         }
     };
