@@ -94,8 +94,6 @@ export default function Contact() {
             "g-recaptcha-response": recaptchaToken
         };
 
-        console.log(payload);
-
         if (validateFields()) {
             setResponseMessage(null);
             window.grecaptcha.reset();
