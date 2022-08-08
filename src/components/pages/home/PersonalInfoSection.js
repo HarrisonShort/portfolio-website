@@ -21,7 +21,7 @@ export default function PersonalInfoSection() {
                             message="You can connect with me here!" />
                     </div>
                     <div className="info-container-right">
-                        <img src="/images/harrison_okunoshima.jpg" alt="Harrison Okunoshima" className="info-image" />
+                        <img src="/images/headshot_1.jpg" alt="Harrison Okunoshima" className="info-image" />
                     </div>
                 </div>
             </section>

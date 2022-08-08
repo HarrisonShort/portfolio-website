@@ -8,7 +8,7 @@ function LatestInfoSection() {
                 <h1>Latest Project</h1>
                 <div className="latest-project-info">
                     <div className="latest-project-image">
-                        <img src="/images/harrison_okunoshima.jpg" alt="Harrison Okunoshima" className="info-image" />
+                        <img src="/images/headshot_1.jpg" alt="Harrison Okunoshima" className="info-image" />
                     </div>
                     <div className="latest-project-text">
                         <p className="latest-project-title">This website!</p>

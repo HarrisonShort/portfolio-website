@@ -17,11 +17,11 @@ export default function SocialLinks(props) {
                             <i className="fab fa-github"></i>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://twitter.com/TheHarrishun" className="href" target="_blank">
                             <i className="fab fa-twitter"></i>
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </React.Fragment>
